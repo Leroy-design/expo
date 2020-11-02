@@ -1,12 +1,12 @@
 // Copyright 2018-present 650 Industries. All rights reserved.
 
-#import <EXNotifications/EXInstallationIdProvider.h>
+#import <EXNotifications/EXServerRegistrationModule.h>
 
 static NSString * const kEXDeviceInstallUUIDKey = @"EXDeviceInstallUUIDKey";
 
-@implementation EXInstallationIdProvider
+@implementation EXServerRegistrationModule
 
-UM_EXPORT_MODULE(NotificationsInstallationIdProvider)
+UM_EXPORT_MODULE(NotificationsServerRegistrationModule)
 
 UM_EXPORT_METHOD_AS(getInstallationIdAsync, getInstallationIdAsyncWithResolver:(UMPromiseResolveBlock)resolve rejecter:(UMPromiseRejectBlock)reject)
 {
